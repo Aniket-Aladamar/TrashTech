@@ -121,3 +121,11 @@ body {
     text-decoration: none;
     margin-right: auto; /* Align the button to the left */
 }
+
+.button:hover {
+    background-color: #3f5bd4;
+}
+
+a {
+    text-decoration: none;
+}
