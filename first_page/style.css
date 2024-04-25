@@ -25,13 +25,12 @@ body {
     justify-content: center;
     margin-top: 20px;
 }
-
 .div-block {
     background-color: #67d489;
     color: #fff;
     padding: 30px; /* Add padding of 10% */
     border-radius: 10px;
-    text-align: left; /* Align text to the left */
+    text-align: center; /* Align text to the center */
     width: 80%;
     max-width: 600px;
     height: 230px;
@@ -122,10 +121,11 @@ body {
     margin-right: auto; /* Align the button to the left */
 }
 
-.button:hover {
-    background-color: #3f5bd4;
-}
-
 a {
     text-decoration: none;
+    color: black;
+    font-family: Arial, sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
 }
