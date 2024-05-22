@@ -38,8 +38,10 @@ function addMarkerAndPolyline(lat, lng) {
   const marker = new google.maps.Marker({
     position: { lat: lat, lng: lng },
     map: map,
-    icon: "/images/dustbin.png",
-    scaledSize: new google.maps.Size(32, 32)
+    icon: {
+      url:"./dustbin.png",
+      scaledSize: new google.maps.Size(18, 18) // Ensure this is set within the icon object
+    }
   });
   markers.push(marker);
 }
@@ -55,7 +57,7 @@ function drawPolyline() {
     geodesic: true,
     strokeColor: "#000000", // Black color
     strokeOpacity: 1.0,
-    strokeWeight: 4 // Thicker line
+    strokeWeight: 2 // Thicker line
   });
   polyline.setMap(map);
 }
